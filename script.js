@@ -27,6 +27,26 @@ function updateIcon(theme) {
     iconSpan.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
+// --- Mobile Menu Toggle ---
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const navItems = document.querySelectorAll('.nav-links a');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close menu when a link is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
 // --- Custom Cursor Follower ---
 const cursorGlow = document.querySelector('.cursor-glow');
 document.addEventListener('mousemove', (e) => {

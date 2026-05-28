@@ -137,12 +137,6 @@ body {
     width: 100%;
 }
 
-@media (max-width: 900px) {
-    .nav-links {
-        display: none;
-    }
-}
-
 /* Hero Section */
 .hero {
     display: flex;
@@ -658,6 +652,45 @@ section {
 .reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s ease-out; }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
+/* Navbar Controls & Hamburger */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .hero { flex-direction: column; text-align: center; padding-top: 8rem; }
@@ -666,8 +699,40 @@ section {
     .hero-image { margin-top: 3rem; }
     .image-wrapper { transform: none; }
     .newsletter-form { flex-direction: column; }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--card-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links a {
+        font-size: 1.5rem;
+    }
 }
+
 @media (max-width: 480px) {
     .navbar { padding: 1rem 5%; }
     .hero h1 { font-size: 2.5rem; }
+    .section-title { font-size: 2rem; }
+    .stat-item h2 { font-size: 3rem; }
+    .amount-options { grid-template-columns: 1fr; }
+    .nav-links { width: 100%; }
 }
