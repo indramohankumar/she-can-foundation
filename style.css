@@ -32,12 +32,15 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.4s ease, color 0.4s ease;
     overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
@@ -301,7 +304,7 @@ section {
 .about { background: var(--secondary-bg); }
 .about-grid, .programs-grid, .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -663,12 +666,13 @@ section {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 25px;
-    height: 18px;
+    width: 30px;
+    height: 20px;
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 101;
+    position: relative;
+    z-index: 9999;
 }
 
 .hamburger .bar {
@@ -734,5 +738,11 @@ section {
     .section-title { font-size: 2rem; }
     .stat-item h2 { font-size: 3rem; }
     .amount-options { grid-template-columns: 1fr; }
-    .nav-links { width: 100%; }
+    .nav-links { width: 100%; z-index: 9998; }
+    .about-grid, .programs-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    section { padding: 4rem 5%; }
+    .hero { padding: 6rem 5% 2rem; }
+    .image-wrapper { padding: 5px; }
 }
