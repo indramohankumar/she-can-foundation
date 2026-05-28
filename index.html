@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation</title>
+    <meta name="description" content="She Can Foundation - Empowering girls and changing the world through education and mentorship.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <div class="logo">She Can Foundation</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span class="icon">🌙</span>
+        </button>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="animate-up">Empowering Girls,<br>Changing the World</h1>
+            <p class="animate-up delay-1">We believe in a future where every girl has the opportunity to learn, lead, and thrive without boundaries.</p>
+            <button class="cta-btn animate-up delay-2" id="donate-btn">Donate Now</button>
+        </div>
+        <div class="hero-image animate-fade-in">
+            <div class="image-wrapper">
+                <img src="hero.png" alt="Girls learning and growing together">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="section-title reveal">About Us</h2>
+            <div class="about-grid">
+                <div class="about-card reveal delay-1">
+                    <h3>Our Vision</h3>
+                    <p>To create a world where every young woman has access to quality education, mentorship, and equal opportunities to succeed in any field she chooses.</p>
+                </div>
+                <div class="about-card reveal delay-2">
+                    <h3>Our Mission</h3>
+                    <p>Providing resources, safe spaces, and guidance for girls globally. We build communities that uplift and inspire the next generation of female leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="impact" id="impact">
+        <div class="impact-container">
+            <div class="stat-item reveal delay-1">
+                <h2 class="counter" data-target="10000">0</h2>
+                <p>Girls Empowered</p>
+            </div>
+            <div class="stat-item reveal delay-2">
+                <h2 class="counter" data-target="50">0</h2>
+                <p>Communities Reached</p>
+            </div>
+            <div class="stat-item reveal delay-3">
+                <h2 class="counter" data-target="150">0</h2>
+                <p>Active Mentors</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Initiatives -->
+    <section class="programs" id="programs">
+        <div class="programs-container">
+            <h2 class="section-title reveal">Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card reveal delay-1">
+                    <div class="program-icon">🔬</div>
+                    <h3>STEM Education</h3>
+                    <p>Equipping young women with skills in science, technology, engineering, and mathematics.</p>
+                </div>
+                <div class="program-card reveal delay-2">
+                    <div class="program-icon">🌟</div>
+                    <h3>Leadership Workshops</h3>
+                    <p>Training tomorrow's leaders through confidence building and public speaking courses.</p>
+                </div>
+                <div class="program-card reveal delay-3">
+                    <div class="program-icon">🧘‍♀️</div>
+                    <h3>Health & Wellness</h3>
+                    <p>Promoting physical and mental well-being through sports, nutrition, and mental health support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title reveal">Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal delay-1">
+                    <p class="quote">"Thanks to the STEM program, I am now pursuing my dream degree in Computer Science!"</p>
+                    <div class="author">- Maya, 18</div>
+                </div>
+                <div class="testimonial-card reveal delay-2">
+                    <p class="quote">"The leadership workshops gave me the confidence to start my own community project."</p>
+                    <div class="author">- Sarah, 21</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2 class="section-title reveal">Frequently Asked Questions</h2>
+            <div class="faq-list reveal delay-1">
+                <div class="faq-item">
+                    <button class="faq-question">How can I become a mentor? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>You can apply through our Contact form. We look for passionate individuals willing to dedicate at least 2 hours a week.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Where are your programs located? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>We operate globally with physical hubs in 10 countries and virtual programs accessible worldwide.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are donations tax-deductible? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Yes! She Can Foundation is a registered 501(c)(3) nonprofit, and all donations are tax-deductible.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title reveal">Contact Us</h2>
+            <form id="contact-form" class="reveal delay-1">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can you help?"></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+                <div id="form-success" class="form-success hidden">Thank you! Your message has been sent.</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter reveal">
+        <div class="newsletter-container">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates and stories delivered to your inbox.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" required placeholder="Enter your email address" aria-label="Email">
+                <button type="submit" class="cta-btn small-btn">Subscribe</button>
+            </form>
+            <div id="newsletter-success" class="form-success hidden" style="margin-top:10px;">Subscribed successfully!</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>She Can Foundation</h2>
+            <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div id="donation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Support Our Mission</h2>
+            <p>Your contribution helps empower girls around the world.</p>
+            <form class="donation-form">
+                <div class="amount-options">
+                    <label class="amount-btn"><input type="radio" name="amount" value="10"> $10</label>
+                    <label class="amount-btn"><input type="radio" name="amount" value="25" checked> $25</label>
+                    <label class="amount-btn"><input type="radio" name="amount" value="50"> $50</label>
+                    <label class="amount-btn"><input type="radio" name="amount" value="custom"> Custom</label>
+                </div>
+                <button type="button" class="cta-btn w-100" id="submit-donation">Donate Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
